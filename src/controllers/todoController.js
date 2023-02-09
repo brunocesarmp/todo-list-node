@@ -1,6 +1,7 @@
 exports.get = (req, res) => {
+    const id = req.params.id;
     console.log("Get");
-    res.send("OK Get")
+    res.send(`OK Get id: ${id}`)
 }
 
 exports.getAll = (req, res) => {
@@ -14,11 +15,13 @@ exports.add = (req, res) => {
 }
 
 exports.update = (req, res) => {
+    const id = req.params.id;
     console.log("Update")
-    res.send("OK Update")
+    res.send(`OK Update id: ${id}`)
 }
 
 exports.delete = (req, res) => {
+    const id = req.params.id;
     console.log("Delete")
-    res.send("OK Delete")
+    res.send(`OK Delete id: ${id}`)
 }
